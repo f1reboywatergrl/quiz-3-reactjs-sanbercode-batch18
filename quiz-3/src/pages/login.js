@@ -4,8 +4,8 @@ import {Context} from "./main.js"
 
 const Login = (props) => {
 
-    const [login, setLogin] = useContext(Context)
-    const [form, setForm] = useState(-1);
+    /*const [login, setLogin] = useContext(Context)
+    const [form, setForm] = useState(-1);*/
 
     
     return (
@@ -20,11 +20,11 @@ const Login = (props) => {
                     <input type="text" style={{marginLeft: "1%"}}/>
                 </div>
                 <div style={{display:"flex", justifyContent: "center", alignItems: "center"}}>
-                    <button onClick={() => setLogin(true)}>Login</button>
+                    <button>Login</button>
                 </div>
             </section>
         </div>
     );
-  }
+  }//onClick={() => setLogin(true)}
 
   export default Login
